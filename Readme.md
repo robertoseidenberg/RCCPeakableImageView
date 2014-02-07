@@ -7,7 +7,7 @@ at the [Flag Kickstarter Project](https://www.kickstarter.com/projects/130641368
 
 #### Features
 
-Automatically fills the image view with the image and adjusts "peeking" according to the image size.
+Automatically fills the image view with the image and adjusts "peeking" according to the image size. "Peeking" means: remaining potions of the image will be scrolled to the visible view area as you tilt your phone.
 
 Build and run the sample app to see it in action.
 
