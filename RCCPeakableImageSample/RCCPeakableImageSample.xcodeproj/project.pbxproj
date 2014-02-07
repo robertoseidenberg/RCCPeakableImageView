@@ -22,7 +22,6 @@
 		A4669CEA18A522C2006767BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4669CE718A522C2006767BC /* Images.xcassets */; };
 		A4669CF018A5236C006767BC /* RCCGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669CEE18A5236C006767BC /* RCCGridViewController.m */; };
 		A4669CF118A5236C006767BC /* RCCGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4669CEF18A5236C006767BC /* RCCGridViewController.xib */; };
-		A4669CF618A525E6006767BC /* RCCPeakableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669CF518A525E6006767BC /* RCCPeakableImageView.m */; };
 		A4669D1518A5407C006767BC /* Thumb001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFB18A5407C006767BC /* Thumb001.jpg */; };
 		A4669D1618A5407C006767BC /* Thumb002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFC18A5407C006767BC /* Thumb002.jpg */; };
 		A4669D1718A5407C006767BC /* Thumb003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFD18A5407C006767BC /* Thumb003.jpg */; };
@@ -49,6 +48,7 @@
 		A4669D2C18A5407C006767BC /* Thumb024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669D1218A5407C006767BC /* Thumb024.jpg */; };
 		A4669D2D18A5407C006767BC /* Thumb025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669D1318A5407C006767BC /* Thumb025.jpg */; };
 		A4669D3018A54741006767BC /* Thumb000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669D2F18A54741006767BC /* Thumb000.jpg */; };
+		A4669D3318A55947006767BC /* RCCPeakableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669D3218A55947006767BC /* RCCPeakableImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,6 @@
 		A4669CED18A5236C006767BC /* RCCGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCGridViewController.h; path = ViewControllers/RCCGridViewController/RCCGridViewController.h; sourceTree = "<group>"; };
 		A4669CEE18A5236C006767BC /* RCCGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCGridViewController.m; path = ViewControllers/RCCGridViewController/RCCGridViewController.m; sourceTree = "<group>"; };
 		A4669CEF18A5236C006767BC /* RCCGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RCCGridViewController.xib; path = ViewControllers/RCCGridViewController/RCCGridViewController.xib; sourceTree = "<group>"; };
-		A4669CF418A525E6006767BC /* RCCPeakableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCPeakableImageView.h; path = Views/RCCPeakableImageView/RCCPeakableImageView.h; sourceTree = "<group>"; };
-		A4669CF518A525E6006767BC /* RCCPeakableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCPeakableImageView.m; path = Views/RCCPeakableImageView/RCCPeakableImageView.m; sourceTree = "<group>"; };
 		A4669CFB18A5407C006767BC /* Thumb001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb001.jpg; sourceTree = "<group>"; };
 		A4669CFC18A5407C006767BC /* Thumb002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb002.jpg; sourceTree = "<group>"; };
 		A4669CFD18A5407C006767BC /* Thumb003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb003.jpg; sourceTree = "<group>"; };
@@ -110,6 +108,8 @@
 		A4669D1218A5407C006767BC /* Thumb024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb024.jpg; sourceTree = "<group>"; };
 		A4669D1318A5407C006767BC /* Thumb025.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb025.jpg; sourceTree = "<group>"; };
 		A4669D2F18A54741006767BC /* Thumb000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb000.jpg; sourceTree = "<group>"; };
+		A4669D3118A55947006767BC /* RCCPeakableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCPeakableImageView.h; path = ../../../RCCPeakableImageView/RCCPeakableImageView.h; sourceTree = "<group>"; };
+		A4669D3218A55947006767BC /* RCCPeakableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCPeakableImageView.m; path = ../../../RCCPeakableImageView/RCCPeakableImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,8 +263,8 @@
 		A4669CF318A5250E006767BC /* RCCPeekableImageView */ = {
 			isa = PBXGroup;
 			children = (
-				A4669CF418A525E6006767BC /* RCCPeakableImageView.h */,
-				A4669CF518A525E6006767BC /* RCCPeakableImageView.m */,
+				A4669D3118A55947006767BC /* RCCPeakableImageView.h */,
+				A4669D3218A55947006767BC /* RCCPeakableImageView.m */,
 			);
 			name = RCCPeekableImageView;
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4669CF618A525E6006767BC /* RCCPeakableImageView.m in Sources */,
+				A4669D3318A55947006767BC /* RCCPeakableImageView.m in Sources */,
 				A4669CBF18A51DE6006767BC /* main.m in Sources */,
 				A4669CF018A5236C006767BC /* RCCGridViewController.m in Sources */,
 				A4669CE918A522C2006767BC /* RCCAppDelegate.m in Sources */,
