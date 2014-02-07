@@ -27,3 +27,7 @@ Build and run the sample app to see it in action.
     view.padding = CGPointMake(20.0f, 20.0f);
 
 ```
+
+#### Acknowledgements
+
+All images used in the sample app found at [Unsplash](http://unsplash.com/)
