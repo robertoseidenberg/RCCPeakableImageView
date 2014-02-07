@@ -28,6 +28,11 @@ Build and run the sample app to see it in action.
 
 ```
 
+#### Requirements
+
+* iOS 7.0
+* ARC
+
 #### Acknowledgements
 
 All images used in the sample app found at [Unsplash](http://unsplash.com/)
