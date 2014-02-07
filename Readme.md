@@ -1,7 +1,6 @@
 ## RCCPeakableImageView
----
 
-Implementation of the concept of "peekable" thumbnail images shown 
+Implementation of a "peekable" thumbnail image as shown 
 at the [Flag Kickstarter Project](https://www.kickstarter.com/projects/1306413684/flag-the-app-that-prints-and-mails-your-photos-for)
 
 ![ ](Documentation/images/imageview.gif)
