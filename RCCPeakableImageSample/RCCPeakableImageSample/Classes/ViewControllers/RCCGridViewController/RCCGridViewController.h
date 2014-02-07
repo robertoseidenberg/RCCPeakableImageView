@@ -1,5 +1,5 @@
 //
-//  RCCAppDelegate.h
+//  RCCGridViewController.h
 //  RCCPeakableImageSample
 //
 //  Created by Roberto Seidenberg on 07.02.14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCCAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface RCCGridViewController : UIViewController
 
 @end
