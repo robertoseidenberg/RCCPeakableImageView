@@ -11,8 +11,8 @@
 /**
  * Scales the image up by the given padding values.
  * Use this property to apply a slight "peek" value to 
- * images by default even if their size perfectly
- * fits the image view bounds. Default value is (0,0)
+ * an image even if fits perfectly into the view bounds.
+ * Default value is (0,0)
  */
 @property (nonatomic, assign, readwrite) CGPoint padding;
 
