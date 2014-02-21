@@ -31,6 +31,7 @@ Build and run the sample app to see it in action.
 #### Requirements
 
 * iOS 7.0
+* "Reduce Motion" disabled in Settings > General > Accessibility
 * ARC
 
 #### Acknowledgements
