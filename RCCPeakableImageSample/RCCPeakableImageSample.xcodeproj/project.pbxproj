@@ -17,11 +17,9 @@
 		A4669CCE18A51DE7006767BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4669CB618A51DE6006767BC /* UIKit.framework */; };
 		A4669CD618A51DE7006767BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4669CD418A51DE7006767BC /* InfoPlist.strings */; };
 		A4669CD818A51DE7006767BC /* RCCPeakableImageSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669CD718A51DE7006767BC /* RCCPeakableImageSampleTests.m */; };
-		A4669CE818A522C2006767BC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4669CE318A522C2006767BC /* MainWindow.xib */; };
 		A4669CE918A522C2006767BC /* RCCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669CE518A522C2006767BC /* RCCAppDelegate.m */; };
 		A4669CEA18A522C2006767BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4669CE718A522C2006767BC /* Images.xcassets */; };
 		A4669CF018A5236C006767BC /* RCCGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669CEE18A5236C006767BC /* RCCGridViewController.m */; };
-		A4669CF118A5236C006767BC /* RCCGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4669CEF18A5236C006767BC /* RCCGridViewController.xib */; };
 		A4669D1518A5407C006767BC /* Thumb001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFB18A5407C006767BC /* Thumb001.jpg */; };
 		A4669D1618A5407C006767BC /* Thumb002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFC18A5407C006767BC /* Thumb002.jpg */; };
 		A4669D1718A5407C006767BC /* Thumb003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669CFD18A5407C006767BC /* Thumb003.jpg */; };
@@ -49,6 +47,11 @@
 		A4669D2D18A5407C006767BC /* Thumb025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669D1318A5407C006767BC /* Thumb025.jpg */; };
 		A4669D3018A54741006767BC /* Thumb000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4669D2F18A54741006767BC /* Thumb000.jpg */; };
 		A4669D3318A55947006767BC /* RCCPeakableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4669D3218A55947006767BC /* RCCPeakableImageView.m */; };
+		EF44F44418B7DBAF00C27C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF44F44318B7DBAF00C27C3E /* Main.storyboard */; };
+		EF44F44718B7DC5B00C27C3E /* RCCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44F44618B7DC5B00C27C3E /* RCCTableViewController.m */; };
+		EF44F44C18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44F44B18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.m */; };
+		EF44F44F18B7E29400C27C3E /* RCCPeakableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44F44E18B7E29400C27C3E /* RCCPeakableTableViewCell.m */; };
+		EFC47BAB18B7D6EF0016DB33 /* RCCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC47BA918B7D6EF0016DB33 /* RCCCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,13 +78,11 @@
 		A4669CD318A51DE7006767BC /* RCCPeakableImageSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RCCPeakableImageSampleTests-Info.plist"; sourceTree = "<group>"; };
 		A4669CD518A51DE7006767BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4669CD718A51DE7006767BC /* RCCPeakableImageSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCCPeakableImageSampleTests.m; sourceTree = "<group>"; };
-		A4669CE318A522C2006767BC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		A4669CE418A522C2006767BC /* RCCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCAppDelegate.h; sourceTree = "<group>"; };
 		A4669CE518A522C2006767BC /* RCCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCAppDelegate.m; sourceTree = "<group>"; };
 		A4669CE718A522C2006767BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A4669CED18A5236C006767BC /* RCCGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCGridViewController.h; path = ViewControllers/RCCGridViewController/RCCGridViewController.h; sourceTree = "<group>"; };
-		A4669CEE18A5236C006767BC /* RCCGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCGridViewController.m; path = ViewControllers/RCCGridViewController/RCCGridViewController.m; sourceTree = "<group>"; };
-		A4669CEF18A5236C006767BC /* RCCGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RCCGridViewController.xib; path = ViewControllers/RCCGridViewController/RCCGridViewController.xib; sourceTree = "<group>"; };
+		A4669CED18A5236C006767BC /* RCCGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCGridViewController.h; sourceTree = "<group>"; };
+		A4669CEE18A5236C006767BC /* RCCGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCGridViewController.m; sourceTree = "<group>"; };
 		A4669CFB18A5407C006767BC /* Thumb001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb001.jpg; sourceTree = "<group>"; };
 		A4669CFC18A5407C006767BC /* Thumb002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb002.jpg; sourceTree = "<group>"; };
 		A4669CFD18A5407C006767BC /* Thumb003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb003.jpg; sourceTree = "<group>"; };
@@ -110,6 +111,15 @@
 		A4669D2F18A54741006767BC /* Thumb000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thumb000.jpg; sourceTree = "<group>"; };
 		A4669D3118A55947006767BC /* RCCPeakableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCPeakableImageView.h; path = ../../../RCCPeakableImageView/RCCPeakableImageView.h; sourceTree = "<group>"; };
 		A4669D3218A55947006767BC /* RCCPeakableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCPeakableImageView.m; path = ../../../RCCPeakableImageView/RCCPeakableImageView.m; sourceTree = "<group>"; };
+		EF44F44318B7DBAF00C27C3E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EF44F44518B7DC5B00C27C3E /* RCCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCTableViewController.h; sourceTree = "<group>"; };
+		EF44F44618B7DC5B00C27C3E /* RCCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCTableViewController.m; sourceTree = "<group>"; };
+		EF44F44A18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCPeakableCollectionViewCell.h; path = Views/RCCPeakableCollectionViewCell.h; sourceTree = "<group>"; };
+		EF44F44B18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCPeakableCollectionViewCell.m; path = Views/RCCPeakableCollectionViewCell.m; sourceTree = "<group>"; };
+		EF44F44D18B7E29400C27C3E /* RCCPeakableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCCPeakableTableViewCell.h; path = Views/RCCPeakableTableViewCell.h; sourceTree = "<group>"; };
+		EF44F44E18B7E29400C27C3E /* RCCPeakableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCCPeakableTableViewCell.m; path = Views/RCCPeakableTableViewCell.m; sourceTree = "<group>"; };
+		EFC47BA818B7D6EF0016DB33 /* RCCCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCCollectionViewController.h; sourceTree = "<group>"; };
+		EFC47BA918B7D6EF0016DB33 /* RCCCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,9 +228,9 @@
 		A4669CE218A522C2006767BC /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				A4669CE318A522C2006767BC /* MainWindow.xib */,
 				A4669CE418A522C2006767BC /* RCCAppDelegate.h */,
 				A4669CE518A522C2006767BC /* RCCAppDelegate.m */,
+				EF44F44318B7DBAF00C27C3E /* Main.storyboard */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -237,36 +247,27 @@
 		A4669CEB18A5233C006767BC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A4669CEC18A52342006767BC /* RCCGridViewController */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		A4669CEC18A52342006767BC /* RCCGridViewController */ = {
-			isa = PBXGroup;
-			children = (
+				EF44F44518B7DC5B00C27C3E /* RCCTableViewController.h */,
+				EF44F44618B7DC5B00C27C3E /* RCCTableViewController.m */,
+				EFC47BA818B7D6EF0016DB33 /* RCCCollectionViewController.h */,
+				EFC47BA918B7D6EF0016DB33 /* RCCCollectionViewController.m */,
 				A4669CED18A5236C006767BC /* RCCGridViewController.h */,
 				A4669CEE18A5236C006767BC /* RCCGridViewController.m */,
-				A4669CEF18A5236C006767BC /* RCCGridViewController.xib */,
 			);
-			name = RCCGridViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A4669CF218A52509006767BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A4669CF318A5250E006767BC /* RCCPeekableImageView */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		A4669CF318A5250E006767BC /* RCCPeekableImageView */ = {
-			isa = PBXGroup;
-			children = (
+				EF44F44A18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.h */,
+				EF44F44B18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.m */,
 				A4669D3118A55947006767BC /* RCCPeakableImageView.h */,
 				A4669D3218A55947006767BC /* RCCPeakableImageView.m */,
+				EF44F44D18B7E29400C27C3E /* RCCPeakableTableViewCell.h */,
+				EF44F44E18B7E29400C27C3E /* RCCPeakableTableViewCell.m */,
 			);
-			name = RCCPeekableImageView;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		A4669CF718A527C3006767BC /* Images */ = {
@@ -350,6 +351,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = RCCBox;
 				TargetAttributes = {
+					A4669CAE18A51DE6006767BC = {
+						DevelopmentTeam = TX54R8GYX2;
+					};
 					A4669CC918A51DE7006767BC = {
 						TestTargetID = A4669CAE18A51DE6006767BC;
 					};
@@ -379,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4669CEA18A522C2006767BC /* Images.xcassets in Resources */,
-				A4669CE818A522C2006767BC /* MainWindow.xib in Resources */,
 				A4669D2418A5407C006767BC /* Thumb016.jpg in Resources */,
 				A4669D1F18A5407C006767BC /* Thumb011.jpg in Resources */,
 				A4669D1518A5407C006767BC /* Thumb001.jpg in Resources */,
@@ -388,7 +391,7 @@
 				A4669D2118A5407C006767BC /* Thumb013.jpg in Resources */,
 				A4669D1E18A5407C006767BC /* Thumb010.jpg in Resources */,
 				A4669D2A18A5407C006767BC /* Thumb022.jpg in Resources */,
-				A4669CF118A5236C006767BC /* RCCGridViewController.xib in Resources */,
+				EF44F44418B7DBAF00C27C3E /* Main.storyboard in Resources */,
 				A4669D2718A5407C006767BC /* Thumb019.jpg in Resources */,
 				A4669D2218A5407C006767BC /* Thumb014.jpg in Resources */,
 				A4669D1718A5407C006767BC /* Thumb003.jpg in Resources */,
@@ -427,7 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4669D3318A55947006767BC /* RCCPeakableImageView.m in Sources */,
+				EF44F44C18B7DF7B00C27C3E /* RCCPeakableCollectionViewCell.m in Sources */,
 				A4669CBF18A51DE6006767BC /* main.m in Sources */,
+				EF44F44718B7DC5B00C27C3E /* RCCTableViewController.m in Sources */,
+				EFC47BAB18B7D6EF0016DB33 /* RCCCollectionViewController.m in Sources */,
+				EF44F44F18B7E29400C27C3E /* RCCPeakableTableViewCell.m in Sources */,
 				A4669CF018A5236C006767BC /* RCCGridViewController.m in Sources */,
 				A4669CE918A522C2006767BC /* RCCAppDelegate.m in Sources */,
 			);
@@ -548,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RCCPeakableImageSample/RCCPeakableImageSample-Prefix.pch";
 				INFOPLIST_FILE = "RCCPeakableImageSample/RCCPeakableImageSample-Info.plist";
@@ -561,6 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RCCPeakableImageSample/RCCPeakableImageSample-Prefix.pch";
 				INFOPLIST_FILE = "RCCPeakableImageSample/RCCPeakableImageSample-Info.plist";
