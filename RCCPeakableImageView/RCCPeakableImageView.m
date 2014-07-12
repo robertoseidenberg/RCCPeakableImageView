@@ -3,7 +3,7 @@
 
 @interface RCCPeakableImageView ()
 
-@property (nonatomic, strong, readwrite) UIImageView *RCC_imageView;
+@property (nonatomic, strong, readwrite) UIImageView *imageView;
 
 @end
 
@@ -30,11 +30,11 @@
 - (void)setImage:(UIImage *)image
 {
   // Store image
-  self.RCC_imageView.image = image;
+  self.imageView.image = image;
   
   // Remove exising motion effects
-  for (UIMotionEffect *effect in [self.RCC_imageView motionEffects]) {
-    [self.RCC_imageView removeMotionEffect:effect];
+  for (UIMotionEffect *effect in [self.imageView motionEffects]) {
+    [self.imageView removeMotionEffect:effect];
   }
   
   // Update padding
@@ -47,21 +47,21 @@
   _padding = padding;
   
   // Grow image view
-  CGRect frame = self.RCC_imageView.bounds;
+  CGRect frame = self.imageView.bounds;
   CGRect paddingFrame = CGRectInset(frame, -ABS(padding.x), -ABS(padding.y));
-  self.RCC_imageView.frame = paddingFrame;
+  self.imageView.frame = paddingFrame;
   
   // Calculate offsets for motion effect
-  UIImage *image = self.RCC_imageView.image;
-  CGFloat horRatio = self.RCC_imageView.bounds.size.width / image.size.width;
-  CGFloat vertRatio = self.RCC_imageView.bounds.size.height / image.size.height;
+  UIImage *image = self.imageView.image;
+  CGFloat horRatio = self.imageView.bounds.size.width / image.size.width;
+  CGFloat vertRatio = self.imageView.bounds.size.height / image.size.height;
   CGFloat ratio = MAX(horRatio, vertRatio);
   CGSize aspectFillSize = CGSizeMake(image.size.width * ratio, image.size.height * ratio);
   CGFloat horPading =
-  ABS((self.RCC_imageView.bounds.size.width - aspectFillSize.width) / 2.0f);
+  ABS((self.imageView.bounds.size.width - aspectFillSize.width) / 2.0f);
   horPading = horPading + ABS(self.padding.x / 2.0f);
   CGFloat vertPading =
-  ABS((self.RCC_imageView.bounds.size.height - aspectFillSize.height) / 2.0f);
+  ABS((self.imageView.bounds.size.height - aspectFillSize.height) / 2.0f);
   vertPading = vertPading + ABS(self.padding.y / 2.0f);
   
   // Add motion effect to image view
@@ -73,8 +73,8 @@
   UIInterpolatingMotionEffect *vertMotionEffect =
   [self RCC_verticalEffectWithMinDistance:@(-vertPading)
                            andMaxDistance:@(vertPading)];
-  [self.RCC_imageView addMotionEffect:horizMotionEffect];
-  [self.RCC_imageView addMotionEffect:vertMotionEffect];
+  [self.imageView addMotionEffect:horizMotionEffect];
+  [self.imageView addMotionEffect:vertMotionEffect];  
 }
 
 # pragma mark - Priavte helpers (Setup)
@@ -85,10 +85,12 @@
   self.clipsToBounds = YES;
   
   // Add image subview
-  self.RCC_imageView = [[UIImageView alloc] initWithFrame:self.bounds];
-  self.RCC_imageView.contentMode = UIViewContentModeScaleAspectFill;
-  self.RCC_imageView.clipsToBounds = NO;
-  [self addSubview:self.RCC_imageView];
+  self.imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+  self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+  self.imageView.clipsToBounds = NO;
+  self.imageView.backgroundColor = [UIColor clearColor];
+  self.imageView.opaque = NO;
+  [self addSubview:self.imageView];
 }
 
 - (UIInterpolatingMotionEffect *)RCC_horizontalEffectWithMinDistance:(NSNumber *)min

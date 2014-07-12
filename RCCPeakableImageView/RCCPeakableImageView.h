@@ -4,6 +4,12 @@
 @interface RCCPeakableImageView : UIImageView
 
 /**
+ * The image view used to display the image
+ */
+
+@property (nonatomic, strong, readonly) UIImageView *imageView;
+
+/**
  * The image displayed in the image view.
  */
 @property (nonatomic, strong, readwrite) UIImage *image;
