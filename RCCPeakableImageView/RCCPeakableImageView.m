@@ -47,7 +47,7 @@
   _padding = padding;
   
   // Grow image view
-  CGRect frame = self.RCC_imageView.bounds;
+  CGRect frame = self.bounds;
   CGRect paddingFrame = CGRectInset(frame, -ABS(padding.x), -ABS(padding.y));
   self.RCC_imageView.frame = paddingFrame;
   
