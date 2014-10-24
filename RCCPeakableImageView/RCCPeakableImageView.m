@@ -29,52 +29,63 @@
 
 - (void)setImage:(UIImage *)image
 {
-  // Store image
-  self.RCC_imageView.image = image;
-  
-  // Remove exising motion effects
-  for (UIMotionEffect *effect in [self.RCC_imageView motionEffects]) {
-    [self.RCC_imageView removeMotionEffect:effect];
-  }
-  
-  // Update padding
-  [self setPadding:self.padding];
+    // Store image
+    self.RCC_imageView.image = image;
+
+    // Update padding
+    [self setPadding:self.padding];
 }
 
 - (void)setPadding:(CGPoint)padding
 {
-  // Store padding value
-  _padding = padding;
-  
-  // Grow image view
-  CGRect frame = self.bounds;
-  CGRect paddingFrame = CGRectInset(frame, -ABS(padding.x), -ABS(padding.y));
-  self.RCC_imageView.frame = paddingFrame;
-  
-  // Calculate offsets for motion effect
-  UIImage *image = self.RCC_imageView.image;
-  CGFloat horRatio = self.RCC_imageView.bounds.size.width / image.size.width;
-  CGFloat vertRatio = self.RCC_imageView.bounds.size.height / image.size.height;
-  CGFloat ratio = MAX(horRatio, vertRatio);
-  CGSize aspectFillSize = CGSizeMake(image.size.width * ratio, image.size.height * ratio);
-  CGFloat horPading =
-  ABS((self.RCC_imageView.bounds.size.width - aspectFillSize.width) / 2.0f);
-  horPading = horPading + ABS(self.padding.x / 2.0f);
-  CGFloat vertPading =
-  ABS((self.RCC_imageView.bounds.size.height - aspectFillSize.height) / 2.0f);
-  vertPading = vertPading + ABS(self.padding.y / 2.0f);
-  
-  // Add motion effect to image view
-  // Horizontal movement
-  UIInterpolatingMotionEffect *horizMotionEffect =
-  [self RCC_horizontalEffectWithMinDistance:@(-horPading)
-                             andMaxDistance:@(horPading)];
-  // Vertical movement
-  UIInterpolatingMotionEffect *vertMotionEffect =
-  [self RCC_verticalEffectWithMinDistance:@(-vertPading)
-                           andMaxDistance:@(vertPading)];
-  [self.RCC_imageView addMotionEffect:horizMotionEffect];
-  [self.RCC_imageView addMotionEffect:vertMotionEffect];
+    // Store padding value
+    _padding = padding;
+    [self setNeedsLayout];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+
+    // Remove exising motion effects
+    for (UIMotionEffect *effect in [self.RCC_imageView motionEffects]) {
+        [self.RCC_imageView removeMotionEffect:effect];
+    }
+
+    // Add motion effects if there is any image.
+    UIImage *image = self.RCC_imageView.image;
+    if (image)
+    {
+        // Grow image view
+        CGRect frame = self.bounds;
+        CGRect paddingFrame = CGRectInset(frame, -ABS(self.padding.x), -ABS(self.padding.y));
+        self.RCC_imageView.frame = paddingFrame;
+        
+        // Calculate offsets for motion effect
+        UIImage *image = self.RCC_imageView.image;
+        CGFloat horRatio = self.RCC_imageView.bounds.size.width / image.size.width;
+        CGFloat vertRatio = self.RCC_imageView.bounds.size.height / image.size.height;
+        CGFloat ratio = MAX(horRatio, vertRatio);
+        CGSize aspectFillSize = CGSizeMake(image.size.width * ratio, image.size.height * ratio);
+        CGFloat horPading =
+        ABS((self.RCC_imageView.bounds.size.width - aspectFillSize.width) / 2.0f);
+        horPading = horPading + ABS(self.padding.x / 2.0f);
+        CGFloat vertPading =
+        ABS((self.RCC_imageView.bounds.size.height - aspectFillSize.height) / 2.0f);
+        vertPading = vertPading + ABS(self.padding.y / 2.0f);
+        
+        // Add motion effect to image view
+        // Horizontal movement
+        UIInterpolatingMotionEffect *horizMotionEffect =
+        [self RCC_horizontalEffectWithMinDistance:@(-horPading)
+                                   andMaxDistance:@(horPading)];
+        // Vertical movement
+        UIInterpolatingMotionEffect *vertMotionEffect =
+        [self RCC_verticalEffectWithMinDistance:@(-vertPading)
+                                 andMaxDistance:@(vertPading)];
+        [self.RCC_imageView addMotionEffect:horizMotionEffect];
+        [self.RCC_imageView addMotionEffect:vertMotionEffect];
+    }
 }
 
 # pragma mark - Priavte helpers (Setup)
